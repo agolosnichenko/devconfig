@@ -59,29 +59,35 @@ return {
         opts = {
             options = {
                 mode = "buffers",
+                hover = {
+                    enabled = true,
+                    delay = 200,
+                    reveal = { "close" },
+                },
+                indicator = {
+                    icon = "▎",
+                    style = "icon",
+                },
                 show_buffer_close_icons = false,
                 show_close_icon = false,
-                indicator = {
-                    style = "underline",
-                },
-                view = "multiwindow",
-                separator_style = "slant",
                 themable = true,
             },
             --  Some tweaks for the slant style with transparent theme
             highlights = {
-                separator = { fg = "#3c4048" },
-                separator_visible = { fg = "#3c4048" },
-                separator_selected = { fg = "#3c4048" },
-                fill = { bg = "#3c4048" },
-                tab_separator = { fg = "#3c4048" },
-                tab_separator_selected = { fg = "#3c4048" },
-                offset_separator = { fg = "#3c4048" },
+                -- separator = { fg = "#3c4048" },
+                -- separator_visible = { fg = "#3c4048" },
+                -- separator_selected = { fg = "#3c4048" },
+                -- fill = { bg = "#3c4048" },
+                -- tab_separator = { fg = "#3c4048" },
+                -- tab_separator_selected = { fg = "#3c4048" },
+                -- offset_separator = { fg = "#3c4048" },
                 indicator_visible = {
                     bg = "#f1ff5e",
+                    fg = "#f1ff5e",
                 },
                 indicator_selected = {
                     bg = "#f1ff5e",
+                    fg = "#f1ff5e",
                 },
             },
         },
