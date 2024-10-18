@@ -77,6 +77,12 @@ return {
                 tab_separator = { fg = "#3c4048" },
                 tab_separator_selected = { fg = "#3c4048" },
                 offset_separator = { fg = "#3c4048" },
+                indicator_visible = {
+                    bg = "#f1ff5e",
+                },
+                indicator_selected = {
+                    bg = "#f1ff5e",
+                },
             },
         },
     },
