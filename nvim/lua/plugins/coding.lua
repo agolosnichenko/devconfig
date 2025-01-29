@@ -1,5 +1,9 @@
 return {
     {
+        "nvim-treesitter/nvim-treesitter",
+        opts = { indent = { enable = false } },
+    },
+    {
         "yetone/avante.nvim",
         event = "VeryLazy",
         lazy = false,
@@ -109,4 +113,22 @@ return {
             }
         end,
     },
+    -- {
+    --     "saghen/blink.cmp",
+    --     opts = {
+    --         keymap = {
+    --             preset = "enter",
+    --             ["<Tab>"] = { "select_next", "snippet_forward", "fallback" },
+    --             ["<S-Tab>"] = { "select_prev", "snippet_backward", "fallback" },
+    --             ["<CR>"] = { "accept", "fallback" },
+    --             ["<Up>"] = { "select_prev", "snippet_backward", "fallback" },
+    --             ["<Down>"] = { "select_next", "snippet_forward", "fallback" },
+    --         },
+    --         completion = {
+    --             list = {
+    --                 selection = { preselect = false, auto_insert = false },
+    --             },
+    --         },
+    --     },
+    -- },
 }

@@ -3,7 +3,6 @@
 -- Add any additional keymaps here
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
-local Util = require("lazyvim.util")
 
 keymap.set("n", "<C-h>", "<Cmd>NvimTmuxNavigateLeft<CR>", { silent = true })
 keymap.set("n", "<C-j>", "<Cmd>NvimTmuxNavigateDown<CR>", { silent = true })
@@ -11,16 +10,6 @@ keymap.set("n", "<C-k>", "<Cmd>NvimTmuxNavigateUp<CR>", { silent = true })
 keymap.set("n", "<C-l>", "<Cmd>NvimTmuxNavigateRight<CR>", { silent = true })
 keymap.set("n", "<C-\\>", "<Cmd>NvimTmuxNavigateLastActive<CR>", { silent = true })
 keymap.set("n", "<C-Space>", "<Cmd>NvimTmuxNavigateNavigateNext<CR>", { silent = true })
-
--- Borderfull terminal
-vim.keymap.set("n", "<C-/>", function()
-    Util.terminal(nil, { border = "rounded" })
-end, { desc = "Term with border" })
-
--- Borderfull lazygit
-vim.keymap.set("n", "<leader>gg", function()
-    Util.terminal({ "lazygit" }, { cwd = Util.root(), esc_esc = false, ctrl_hjkl = false, border = "rounded" })
-end, { desc = "Lazygit (root dir)" })
 
 keymap.del({ "n", "i", "v" }, "<A-j>")
 keymap.del({ "n", "i", "v" }, "<A-k>")

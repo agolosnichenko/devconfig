@@ -18,12 +18,6 @@ return {
             },
         },
     },
-    {
-        "rcarriga/nvim-notify",
-        opts = {
-            render = "wrapped-compact",
-        },
-    },
     -- filename
     {
         "b0o/incline.nvim",
@@ -91,5 +85,31 @@ return {
                 },
             },
         },
+    },
+    {
+        "folke/which-key.nvim",
+        opts = {
+            preset = "modern",
+        },
+    },
+    {
+        "folke/noice.nvim",
+        opts = {
+            routes = {
+                {
+                    filter = {
+                        event = "notify",
+                        find = "No information available",
+                    },
+                    opts = {
+                        skip = true,
+                    },
+                },
+            },
+        },
+    },
+    {
+        "weirongxu/plantuml-previewer.vim",
+        dependencies = { "tyru/open-browser.vim", "aklt/plantuml-syntax" },
     },
 }
